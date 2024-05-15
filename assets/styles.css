@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    color: #FFF;
+    --bg-height:calc(100vh - 75px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    padding: 1.5em 0.75em;
+    transition: 0.25s;
+    font-size: 1.2rem;
+}
+li{
+    margin: 20px 0;
+}
+a:hover{
+    background-color: #1e1e1e;
+}
+.hot-bar{
+    text-transform: uppercase;
+}
+.logo{
+    text-transform: capitalize;
+}
+.logo span{
+    font-family: "Coming Soon", Courier, monospace;
+    font-size: 2.5rem;
+}
+.hot-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    align-items: center;
+    min-height: 75px;
+    background-color: #262626;
+    flex-wrap: wrap;
+    gap: 0 30px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.nav-bar{
+    flex-basis: 400px;
+}
+.contact-us{
+    flex-grow: 0;
+    flex-basis: 150px;
+    padding: 15px 40px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.bg{
+    width: 100%;
+    height: var(--bg-height);
+    object-fit: cover;
+    object-position: center;
+}
+
+.add-content{
+    position: absolute;
+    width: 40vw;
+    right: 5vw;
+    top: 35vh;
+}
+@media screen and (max-width: 915px) {
+    .add-content{
+        display: none;
+    }
+    ul{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 710px) {
+    .nav-bar {
+        margin-left: -0.75em;
+    }
+}
